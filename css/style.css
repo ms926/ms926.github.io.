@@ -82,7 +82,8 @@ header {
  
  @media (max-width: 1000px){
     .main-nav {
-           background-image: url(../image/abbington-removebg-preview.png);
+           background-image: url(../image/f_logo.png);
+           background-repeat: no-repeat;
        }
    
    }
