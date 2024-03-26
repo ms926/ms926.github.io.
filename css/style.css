@@ -537,3 +537,11 @@ padding: 0.5rem;
 }
 
 
+@media (max-width: 767px){
+    
+      
+    .flex-container >div {
+        flex: 90%;
+    } 
+    
+}
