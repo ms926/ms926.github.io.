@@ -88,15 +88,21 @@ header {
    }
  
 /* CSS for Footer */
-footer{
-    text-align: center;
-    padding: 2px; 
-    color:ivory;
-    }
-/* map container */
+.google-map{
+    flex-direction: row;
+    display: flex;
+}
 #google-map {
     padding-bottom:0;
-    position: relative;
+    position: sticky;
+    top: 20px;
+}
+#footer{
+    padding: 2px; 
+    color:ivory;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 .sitemap, .social, .contact {
     width: calc(100% /3);
@@ -104,62 +110,48 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.sitemap{
-    width: 100%;
-    display:flex;
-    text-align: start;
+    }
+    .sitemap, .contact {
     flex-direction: column;
-    position:absolute;
-  }
-.contact{
-    width: 100%;
-    display: flex;
-    text-align: start;
-    flex-direction: column;
-    position:relative;
-    
-}
-.social {
+    }
+    .social {
     flex-direction: row;
-    width: 100%;    
-}
-.fab {
+    }
+    .fab {
     font-size: 1.5rem;
     padding: 0 0.5rem;
-    color: #f7f2f2;
-}
-.fa-facebook-square:hover {
+    color: #ffffff;
+    }
+    .fa-facebook-square:hover {
     color: #4267B2;
-}
-.fa-twitter-square:hover {
+    }
+     .fa-twitter-square:hover {
     color: #38A1F3;
-}
-.fa-instagram-square:hover {
+    }
+    .fa-instagram-square:hover {
     color: #405de6;
-}
-.footer-li {
+    }
+    .footer-li {
     width: 100px;
-    text-align:left;
-}
-.footer-li a {
-    color: #e9e4e4;
+    text-align: center;
+    }
+    .footer-li a {
+    color: #ffffff;
     text-decoration: none;
     font-size: 0.75rem;
     padding: 0.10rem 0;;
-}
-.footer-li:hover {
+    }
+    .footer-li:hover {
     border-left: 2px solid #ffffff;
     border-right: 2px solid #ffffff;
-}
-
-.footer-header {
+    }
+    .footer-header {
     font-size: 1rem;
     padding-bottom: 0.25rem;
-}
-.footer-text {
+    }
+    .footer-text {
     font-size: 0.75rem;
-}
+    }
 
 /* CSS for FindUs.html */
 #form {
