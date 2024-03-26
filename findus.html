@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <title>Abbington Farm</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Mansi Soni">
+<meta name ="description", content="Highlighting farm">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/3830352c3e.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <ul class="main-ul">
+            <li class="main-li"><a href="findus.html">FindUs</a></li>
+            <li class="main-li"><a href="cafemenu.html">Cafemenu</a></li>
+            <li class="main-li"><a href="cafeshop.html">Cafe-Plantshop</a></li>
+            <li class="main-li"><a href="activities.html">Activities</a></li>
+            <li class="main-li"><a href="animals.html">Animals</a></li>
+            <li class="main-li"><a href="index.html">Home</a></li>    
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="form">
+            <h1 class="form-header">Send us a message</h1>
+            <form id="contact-form">
+                <label for="name">NAME</label>
+                <input type="text" id="name" name="name" placeholder="e.g. John" required>
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email" placeholder="e.g. john@gmail.com" required>
+                <label for="messagetype">MESSAGE TYPE</label>
+                <label>Book your visit :
+                    <input type="date" name="Visit" min="2024-04-01" max="2028-04-28"required />
+                    <span class="validity"></span>
+                </label>
+                <select name="messagetype" id="messagetype">
+                    <option value="null">Please choose one</option>
+                    <option value="Information">Party</option>
+                    <option value="Tours">farm trip</option>
+                    <option value="Other">kids trip</option>
+                    <option value="Other">Other</option>
+                </select>
+                <label for="message">MESSAGE</label>
+                <textarea rows="10" id="message" placeholder="Please provide details of you enquiry."></textarea>
+                <input type="submit" value="Submit" onclick="validate()">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="sitemap">
+            <h3 class="footer-header">Sitemap</h3>
+            <nav class="footer-nav">
+                <ul class="footer-ul">
+                        <li class="footer-li"><a href="index.html">Home</a></li>
+                        <li class="footer-li"><a href="cafeshop.html">Cafe-Plantshop</a></li>
+                        <li class="footer-li"><a href="cafemenu.html">Cafemenu</a></li>
+                        <li class="footer-li"><a href="activities.html">WalkParks</a></li>
+                        <li class="footer-li"><a href="animals.html">Animals</a></li>
+                        <li class="footer-li"><a href="findus.html">FindUs</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram-square"></i></a>
+            </div>
+        <div class="contact">
+            <h3 class="footer-header">Address:Abbington Farm,</h3>
+            <p class="footer-text">Abington</p>
+            <p class="footer-text">Biggar ML12 6RH</p>
+            <p class="footer-text">Tel: +44-01864 502501</p>
+            <p class="footer-text">Edinburgh</p>
+            <h2 class="footer-header">Opening Times </h2>
+            <p class="footer-text"> Monday to Saturday – 8.00am to 5.00pm</p>
+            <p class="footer-text"> Sunday – 9.00am to 4.30pm</p>
+        </div>
+        Copyright © 2024 All Rights Reserved farms</footer>
+    
+<script>
+// Create a function that is called with submit button is presed
+function validate(){
+// Here we are adding all <input> tags into a list
+var elements = document.querySelectorAll("#contact-form input")
+// We are then looping around the list - ITERATION
+for (var i = 0; i < elements.length; i++) {
+// For each <input> tag we pass the value entered in the form to a variable
+var value = document.getElementById(elements[i].id).value
+// For each <input> tag we pass the name attribute value to a variable
+var element = document.getElementById(elements[i].id).name
+// Check to see if the value is empty, no data entered into <input> field - SELECTION
+if (value === "") {
+// If empty create a message to display onto screen
+var str = "The field " + element + " is missing."
+// Display message
+window.alert(str.toUpperCase());
+} // End of check
+} // End of loop
+} // End of function
+</script>
+</body>
+</html>
+
+
+
+
