@@ -224,13 +224,15 @@ label {
     word-wrap: break-word;
     top: 40%;
     left:30%;
-    font-size:40px;
-    color:black;
+    font-size:60px;
+    color:ivory;
+    text-transform: uppercase;
+
 }
 .cta{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 60%;
+    left: 40%;
     background-color:ivory;
     color:purple;
     padding: 0;
@@ -240,17 +242,6 @@ label {
     width:10%;
     text-decoration: none; 
 }
-.hill-text{
-    color: black;
-    position: absolute;
-    top: 35%;
-    left: 40%;
-    font-size: 1rem;
-    word-wrap: break-word;
-    width: 408px;
-    text-align: center;
-    font-style: italic;
-    }  
 #hero {
     position:relative;
     width: 100%;
