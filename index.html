@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
-    <title>Abbington Farm</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abbington Farm</title>
     <meta name="author" content="Mansi Soni">
     <meta name ="description" content="Highlighting farm">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,26 +11,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3830352c3e.js" crossorigin="anonymous"></script>
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    
 </head>
-<body>
 <header>
-    <nav class="main-nav">
-        <ul class="main-ul">
-            <li class="main-li"><a href="findus.html">FindUs</a></li>
-            <li class="main-li"><a href="cafemenu.html">Cafemenu</a></li>
-            <li class="main-li"><a href="cafeshop.html">Cafe-Plantshop</a></li>
-            <li class="main-li"><a href="activities.html">Activities</a></li>
-            <li class="main-li"><a href="animals.html">Animals</a></li>
-            <li class="main-li"><a href="index.html">Home</a></li>        
-        </ul>
-    </nav>
+    <div class="main-nav" id="myTopnav">
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+        <i class="fa fa-bars"></i>
+           <a href="index.html">Home</a>
+            <a href="cafemenu.html">Cafeshop</a>
+            <a href="cafeshop.html">Farmshop</a>
+            <a href="activities.html">Activities</a>
+            <a class="main-li"><a href="animals.html">FarmZoo</a>
+            <a href="findus.html">FindUs</a>  
+    </div>
 </header>
-<section id="hill">
-    <h1 class="hill-header"> Abbington farm</h1>
-    <a href="farmguide.html">farm guide</a>
+<body>
+    <div class="hill"><a class="hill-title" href="farmguide.html">Farmguide</a>   
    <button type="button" class="cta" onclick="contact()">contactus</button>
-</section>
-
+</div>
 <footer><hr>
 <section id="footer">
     <div class="sitemap">
@@ -65,9 +63,23 @@
     <small>Copyright © 2024 All Rights Reserved farms</small>
 </footer>
 <script>
+    // Function to toggle responsive navigation
+    function toggleNav() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "main-nav") {
+            x.className += " responsive";
+        } else {
+            x.className = "main-nav";
+        }
+    }
+</script>
+
+<script>
     function contact() {
         window.location = 'findus.html';
     }
 </script>
 </body>
 </html>
+
+
